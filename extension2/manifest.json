@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Productivity Manager",
+  "version": "1.0",
+
+  "description": "Blocks access to websites that a user specifies. Sites can be unblocked by completing tedious challenges.",
+  "homepage_url": "https://github.com/owensizemore/ProductivityManager",
+  "icons": {
+    "48": "icons/icon.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.google.com/"],
+      "js": ["page-eater.js"]
+    }
+  ]
+
+}
